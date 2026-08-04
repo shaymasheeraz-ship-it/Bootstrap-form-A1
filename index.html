@@ -1,0 +1,154 @@
+
+     
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+<div class="container">
+    <h2 class="text-center mb-4">Registration Form</h2>
+    <div class="instruction">
+    <p class="box">Kindly read the instructions before filling out the form
+        Candidates are required to fill out the form carefully and accurately. Incomplete or incorrect information may lead to disqualification. Please ensure that all mandatory fields are completed before submission.
+ </p>
+ <p class="box">
+        <ul class="box2">
+<li>All fields marked with an asterisk (*) are mandatory and must be filled out.</li>
+<li>Ensure that all information provided is accurate and up-to-date.</li>
+<li>Double-check all entries for accuracy before submission.</li>
+<li>Submit the form before the deadline.</li>
+</ul></p>
+</div>
+    <!-- <fieldset>
+        <legend>Personal Information</legend>
+    </fieldset> -->
+    <form>
+      <div class="row  mb-3">   <!-- mb is margin bottom (it give space btween two input feilds) -->
+        <div class="col-md-6">
+          <label for="fname" class="label">First Name</label>
+          <input type="text" class="form-input" id="fname" placeholder="Enter First Name" required>
+        </div>
+        <div class="col-md-6">
+          <label for="lname" class="label">Last Name</label>
+          <input type="text" class="form-input" id="lname" placeholder="Enter Last Name" required>
+        </div>
+      </div>
+
+   
+      <div class="row mb-3">
+          <div class="col-12">
+        <label for="email" class="label">Email Address</label>
+        <input type="email" class="form-input" id="email" placeholder="name@example.com" required>
+        </div>
+      </div>
+
+      <!-- 3. Parent/Guardian Name -->
+      <label class="label">Parent / Guardian Name</label>
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <input type="text" class="form-input" id="pfname" placeholder="Parent/Guardian First Name" required>
+        </div>
+        <div class="col-md-6">
+          <input type="text" class="form-input" id="plname" placeholder="Parent/Guardian Last Name" required>
+        </div>
+      </div>
+
+      
+      <div class="row mb-3">
+        <div class="col-12">
+          <label class="label">Current Address</label>
+          <input type="text" class="form-input" id="address1" placeholder="Street Address" required>
+        </div>
+      </div>
+
+     
+      <div class="row mb-3">
+        <div class="col-12">
+          <input type="text" class="form-input" id="address2" placeholder="Street Address Line 2">
+        </div>
+      </div>
+
+      <!-- City / Region -->
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <input type="text" class="form-input" id="city" placeholder="City" required>
+        </div>
+        <div class="col-md-6">
+          <input type="text" class="form-input" id="region" placeholder="Region / State" required>
+        </div>
+      </div>
+
+      <!-- Zip / Country -->
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <input type="text" class="form-input" id="zip" placeholder="Postal / Zip Code" required>
+        </div>
+        <div class="col-md-6">
+          <select class="form-select" id="country" required>
+            <option selected disabled>Select Country</option>
+            <option>PAKISTAN</option>
+            <option>India</option>
+            <option>USA</option>
+            <option>UK</option>
+            <option>Canada</option>
+            <option>Australia</option>
+          </select>
+        </div>
+      </div>
+
+     
+      <div class="row mb-3">
+        <div class="col-12">
+          <label for="dob" class="label">Date of Birth</label>
+          <input type="date" class="form-input" id="dob" required>
+        </div>
+      </div>
+
+     
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <label for="phone" class="label">Phone Number</label>
+          <input type="tel" class="form-input" id="phone" placeholder="03xx-xxxxxxx" required>
+        </div>
+        <div class="col-md-6">
+          <label for="gphone" class="label">Guardian Phone Number</label>
+          <input type="tel" class="form-input" id="gphone" placeholder="03xx-xxxxxxx" required>
+        </div>
+      </div>
+
+    <!-- last -->
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <label for="marital" class="label">Marital Status</label>
+          <select class="form-select" id="marital" required>
+            <option selected disabled>Select</option>
+            <option>Single</option>
+            <option>Married</option>
+            <option>Divorced</option>
+            <option>Widowed</option>
+          </select>
+        </div>
+
+        <div class="col-md-6">
+          <label for="dependent" class="label">Number of Dependent</label>
+        <input type="number" class="form-input" id="dependent" placeholder="0" required>   <!-- number show number of dependent -->
+        </div>
+      </div>
+
+      <!-- Submitbtn -->
+       <div class="btnp">
+      <button type="submit" class="btn">Submit</button>
+</div>
+  
+</form>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>    
+</body>
+</html>
