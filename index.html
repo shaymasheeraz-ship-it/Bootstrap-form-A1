@@ -11,7 +11,15 @@
 </head>
 <body class="bg-light">
 <div class="container">
-    <h2 class="text-center mb-4">Registration Form</h2>
+
+  <h2 class="text-center mb-4">Registration Form  
+  <span onclick="changeMode(this)" style="cursor:pointer;">
+    <img class="dark" src="./img/circle-half-stroke-solid-full.svg" alt=""> 
+    <span id="modeText">Dark Mode</span>
+  </span>
+</h2>
+  
+
     <div class="instruction">
     <p class="box">Kindly read the instructions before filling out the form
         Candidates are required to fill out the form carefully and accurately. Incomplete or incorrect information may lead to disqualification. Please ensure that all mandatory fields are completed before submission.
@@ -28,7 +36,7 @@
         <legend>Personal Information</legend>
     </fieldset> -->
     <form>
-      <div class="row  mb-3">   <!-- mb is margin bottom (it give space btween two input feilds) -->
+      <div class="row  mb-3">  
         <div class="col-md-6">
           <label for="fname" class="label">First Name</label>
           <input type="text" class="form-input" id="fname" placeholder="Enter First Name" required>
@@ -146,9 +154,18 @@
 </div>
   
 </form>
+
+
+
+  
+  
+
 </div>
 
 
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>    
+<script src="app.js"></script>
+
 </body>
 </html>
